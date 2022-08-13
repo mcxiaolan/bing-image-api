@@ -1,2 +1,5 @@
-# bing-image-api 
-PHP 必应壁纸
+## PHP 必应壁纸 API
+
+> 使用 PHP 显示必应每日一图或随机显示指定的最近图片。
+
+[请求方法](use.md)
