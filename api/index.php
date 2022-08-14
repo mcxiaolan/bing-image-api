@@ -12,11 +12,11 @@ if ($_GET['rand']==='true') {
   }
 }
 //获取Bing Json信息
-$json_string = file_get_contents('https://www.bing.com/HPImageArchive.aspx?format=js&idx='.$gettime.'&n=1');
+$json_string = file_get_contents('https://cn.bing.com/HPImageArchive.aspx?format=js&idx='.$gettime.'&n=1');
 //转换为PHP数组
 $data = json_decode($json_string);
 //提取基础url
-$imgurlbase = "https://www.bing.com".$data->{"images"}[0]->{"urlbase"};
+$imgurlbase = "https://cn.bing.com".$data->{"images"}[0]->{"urlbase"};
 //判断是否指定图片大小
 $imgsizebase = $_GET['size'];
 if (empty($imgsizebase)){
