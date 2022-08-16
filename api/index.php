@@ -1,4 +1,5 @@
 <?php
+date_default_timezone_set('PRC');
 //判断是否随机调用
 if ($_GET['rand']==='true') {
   $gettime = rand(-1,7);
