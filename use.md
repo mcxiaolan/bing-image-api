@@ -49,6 +49,7 @@
 
 > 注意：
 > 如果使用 UHD 分辨率，则只能用 jpg 格式！
+> 竖屏分辨率不一定有 webp 格式！
 
 ## 请求示例
 ### 默认方式请求（当天）
@@ -58,17 +59,17 @@
 返回值：如下图
 ![默认方式请求（当天）](https://bing.ltya.top/api)
 
-### 获取图片json格式基础信息
+### 获取格式为 webp 的图片 json 格式基础信息
 
-> https://bing.ltya.top/api/?info=true
+> https://bing.ltya.top/api/?info=true&format=webp
 
 返回值：
 ```
 {
-  title:Montagnon Lake, Pyrénées-Atlantiques, France (© thieury/Adobe Stock),
-  url:https://www.bing.com/th?id=OHR.LacMontagnon_ROW4166868594_1920x1080.jpg,
-  link:https://www.bing.com/search?q=lac+du+montagnon+lake&form=hpcapt,
-  time:20220813
+  title:Cocoa pods from Ambanja, Madagascar (© pierivb/Getty Images),
+  url:https://cn.bing.com/th?id=OHR.CocoaPods_ROW3351678192_1920x1080.webp,
+  link:https://www.bing.com/search?q=Cocoa+bean&form=hpcapt,
+  time:20230707
 }
 ```
 
@@ -86,9 +87,9 @@
 返回值：如下图
 ![请求昨天的图片](https://bing.ltya.top/api?day=1)
 
-### 请求昨天的，尺寸为720×1280的，格式为 webp 的图片
+### 请求昨天的，尺寸为720×1280的图片
 
-> https://bing.ltya.top/api?size=720x1280&day=1&format=webp
+> https://bing.ltya.top/api?size=720x1280&day=1
 
 返回值：如下图
-![请求昨天的，尺寸为720×1280的，格式为 webp 的图片](https://bing.ltya.top/api?size=720x1280&day=1&format=webp)
+![请求昨天的，尺寸为720×1280的图片](https://bing.ltya.top/api?size=720x1280&day=1)
