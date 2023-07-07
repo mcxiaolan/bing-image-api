@@ -21,6 +21,7 @@
 * format=jpg
 
 > https://bing.ltya.top/api/?rand=false&day=0&size=1920x1080&info=false&format=jpg
+> 与 https://bing.ltya.top/api 效果相同
 
 ## 可用分辨率
 
