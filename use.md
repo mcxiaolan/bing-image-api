@@ -71,12 +71,12 @@
 }
 ```
 
-### 随机请求图片
+### 随机请求分辨率为 UHD 的图片
 
-> https://bing.ltya.top/api/?rand=true
+> https://bing.ltya.top/api/?rand=true&size=UHD
 
 返回值：如下图
-![随机请求图片](https://bing.ltya.top/api/?rand=true)
+![随机请求分辨率为 UHD 的图片](https://bing.ltya.top/api/?rand=true&size=UHD)
 
 ### 请求昨天的图片
 
@@ -85,9 +85,9 @@
 返回值：如下图
 ![请求昨天的图片](https://bing.ltya.top/api?day=1)
 
-### 请求昨天的尺寸为720×1280的图片
+### 请求昨天的，尺寸为720×1280的，格式为 webp 的图片
 
-> https://bing.ltya.top/api?size=720x1280&day=1
+> https://bing.ltya.top/api?size=720x1280&day=1&format=webp
 
 返回值：如下图
-![请求今天的尺寸为720×1280的图片](https://bing.ltya.top/api?size=720x1280&day=1)
+![请求昨天的，尺寸为720×1280的，格式为 webp 的图片](https://bing.ltya.top/api?size=720x1280&day=1&format=webp)
