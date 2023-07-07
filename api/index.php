@@ -1,5 +1,5 @@
 <?php
-date_default_timezone_set('PRC');
+date_default_timezone_set('Asia/Shanghai');
 //判断是否随机调用
 if ($_GET['rand']==='true') {
   $gettime = rand(-1,7);
@@ -11,6 +11,13 @@ if ($_GET['rand']==='true') {
   }else{
     $gettime = $gettimebase;
   }
+}
+//判断是否指定格式
+$getformatbase = $_GET['format'];
+if (empty($getformatbase)) {
+  $getformat = jpg;
+}else{
+  $getformat = $getformatbase;
 }
 //获取Bing Json信息
 $json_string = file_get_contents('https://cn.bing.com/HPImageArchive.aspx?format=js&idx='.$gettime.'&n=1');
@@ -26,7 +33,7 @@ if (empty($imgsizebase)){
   $imgsize = $imgsizebase;
 }
 //建立完整url
-$imgurl = $imgurlbase."_".$imgsize.".jpg";
+$imgurl = $imgurlbase."_".$imgsize."."$getformat.;
 //获取其他信息
 $imgtime = $data->{"images"}[0]->{"startdate"};
 $imgtitle = $data->{"images"}[0]->{"copyright"};
