@@ -33,7 +33,7 @@ if (empty($imgsizebase)){
   $imgsize = $imgsizebase;
 }
 //建立完整url
-$imgurl = $imgurlbase."_".$imgsize.".".$getformat.;
+$imgurl = $imgurlbase."_".$imgsize.".".$getformat."";
 //获取其他信息
 $imgtime = $data->{"images"}[0]->{"startdate"};
 $imgtitle = $data->{"images"}[0]->{"copyright"};
