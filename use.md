@@ -1,6 +1,6 @@
 ## 自定义参数
 
-> 请求地址：[https://bing.mxjoy.top](https://bing.mxjoy.top)
+> 请求地址：[/api](/api)
 
 | 可选参数 | 参数含义 | 可用变量 |
 | :------------: | :-------------: | :------------: |
@@ -20,8 +20,8 @@
 * info=false
 * format=jpg
 
-> https://bing.mxjoy.top/api/?rand=false&day=0&size=1920x1080&info=false&format=jpg
-> 与 https://bing.mxjoy.top/api 效果相同
+> /api/?rand=false&day=0&size=1920x1080&info=false&format=jpg
+> 与 /api 效果相同
 
 ## 可用分辨率
 
@@ -54,14 +54,14 @@
 ## 请求示例
 ### 默认方式请求（当天）
 
-> https://bing.mxjoy.top/api
+> /api
 
 返回值：如下图
-![默认方式请求（当天）](https://bing.mxjoy.top/api)
+![默认方式请求（当天）](/api)
 
 ### 获取格式为 webp 的图片 json 格式基础信息
 
-> https://bing.mxjoy.top/api/?info=true&format=webp
+> /api/?info=true&format=webp
 
 返回值：
 ```
@@ -75,21 +75,21 @@
 
 ### 随机请求分辨率为 UHD 的图片
 
-> https://bing.mxjoy.top/api/?rand=true&size=UHD
+> /api/?rand=true&size=UHD
 
 返回值：如下图
-![随机请求分辨率为 UHD 的图片](https://bing.mxjoy.top/api/?rand=true&size=UHD)
+![随机请求分辨率为 UHD 的图片](/api/?rand=true&size=UHD)
 
 ### 请求昨天的图片
 
-> https://bing.mxjoy.top/api?day=1
+> /api?day=1
 
 返回值：如下图
-![请求昨天的图片](https://bing.mxjoy.top/api?day=1)
+![请求昨天的图片](/api?day=1)
 
 ### 请求昨天的，尺寸为720×1280的图片
 
-> https://bing.mxjoy.top/api?size=720x1280&day=1
+> /api?size=720x1280&day=1
 
 返回值：如下图
-![请求昨天的，尺寸为720×1280的图片](https://bing.mxjoy.top/api?size=720x1280&day=1)
+![请求昨天的，尺寸为720×1280的图片](/api?size=720x1280&day=1)
