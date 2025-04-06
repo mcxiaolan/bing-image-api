@@ -5,9 +5,11 @@
 [请求方法](use.md)
 
 ## 更新日志
-### Apr 6, 2025
+### Apr 6, 2025 by nayamxjoy
 
-优化大陆访问，更换域名
+1. 更换cdn js以优化大陆访问
+2. 由于vercel不再支持vercel-php@0.3.3，升级到了vercel-php@0.7.3
+3. 接口适配到了php 8.x
 
 ### Jul 7, 2023
 
